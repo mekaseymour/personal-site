@@ -1,3 +1,7 @@
+.buttonContainer {
+  margin-top: 50px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,7 +12,10 @@
   padding: 0 0.5rem;
 }
 
-.container button {
+.button {
+  display: flex;
+    align-items: center;
+    justify-content: center;
   border: var(--gray-800) solid 1px;
   border-radius: 10px;
   color: var(--gray-800);
@@ -17,10 +24,10 @@
   height: 68px;
   margin-bottom: 15px;
   padding: 0 30px;
-  width: 100%;
+  text-decoration: none;
 }
 
-.container button.primary {
+.primary {
   background-color: #F8EA8F;
 }
 
@@ -30,7 +37,7 @@
 }
 
 .title {
-  font-size: 48px;
+  font-size: 36px;
   margin: 0;
   color: var(--gray-800);
 }
@@ -53,7 +60,15 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .buttonContainer {
+    margin-top: 0;
+  }
+
   .description {
     margin: 40px 0;
+  }
+
+  .title {
+    font-size: 48px;
   }
 }
