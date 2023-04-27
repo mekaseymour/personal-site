@@ -1,8 +1,59 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
   justify-content: center;
-  align-items: center;
+  margin: 0 20px;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+}
+
+.container button {
+  border: var(--gray-800) solid 1px;
+  border-radius: 10px;
+  color: var(--gray-800);
+  font-size: 16px;
+  font-weight: 700;
+  height: 68px;
+  margin-bottom: 15px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.container button.primary {
+  background-color: #F8EA8F;
+}
+
+.container p {
+  line-height: 26px;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 48px;
+  margin: 0;
+  color: var(--gray-800);
+}
+
+.description {
+  margin: 20px 0;
+  max-width: 650px;
+  color: var(--gray-800);
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.socialLink {
+  border-radius: 100%;
+  border: 1px solid var(--gray-800);
+  margin: 0 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .description {
+    margin: 40px 0;
+  }
 }
