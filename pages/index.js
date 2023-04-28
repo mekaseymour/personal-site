@@ -19,19 +19,20 @@ export default function Home() {
           }
         `}
       </style>
-      <div>
-        <h1 className={styles.title}>Hi, I'm Meka</h1>
-        <div className={styles.description}>
-          <p>I’m a software engineer with over five years of experience building products at early to mid-stage startups (and occasionally elsewhere).</p>
-          <p>Teaching and walking around Harlem all other times.</p>
-          <p>If you’re working on a project (esp. in climate or health) and want to chat feel free to reach out.</p>
+      <div className={styles.contentWrapper}>
+        <div className={styles.main}>
+          <h1 className={styles.title}>Hi, I'm Meka</h1>
+          <div className={styles.description}>
+            <p>I’m a software engineer, living and working in Harlem, with over five years of experience building things with great people at early to mid-stage startups (and occasionally elsewhere).</p>
+            <p>If you’re working on a project (esp. in climate or health) and want to chat feel free to reach out.</p>
+          </div>
         </div>
         <div className={styles.buttonContainer}>
           <a href="mailto:mekaseymour@gmail.com" className={cn(styles.button, styles.primary)}>Drop me an email</a>
-          <a href="/" className={styles.button}>☕️ Schedule some time</a>
+          <a href="https://calendly.com/mekaseymour/20min" target="_blank" className={styles.button}>☕️ Schedule some time</a>
         </div>
       </div>
-      <div className={styles.socialContainer}>
+      <div className={styles.footer}>
         <a href="https://www.linkedin.com/in/mekaseymour/" target="_blank">
           <Image className={styles.socialLink} src={pandaGif}  height={50} width={50} alt="link to LinkedIn" />
         </a>
