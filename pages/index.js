@@ -1,6 +1,6 @@
 import cn from 'classnames'
 import Image from 'next/image';
-import Head from 'next/Head'
+import Head from 'next/head'
 
 import birdGif from '../images/bird.gif';
 import pandaGif from '../images/panda.gif'
