@@ -23,8 +23,8 @@ export default function Home() {
         <div className={styles.main}>
           <h1 className={styles.title}>Hi, I'm Meka</h1>
           <div className={styles.description}>
-            <p>I’m a software engineer, living and working in Harlem, with over five years of experience building things with great people at early to mid-stage startups (and occasionally elsewhere).</p>
-            <p>If you’re working on a project (esp. in climate or health) and want to chat feel free to reach out.</p>
+            <p>I’m a software engineer, living and working in Harlem, with over five years of experience building at early to mid-stage startups (and occasionally elsewhere).</p>
+            <p>If you’re working on a project (esp. in climate, health, or education) and want to chat feel free to reach out.</p>
           </div>
         </div>
         <div className={styles.buttonContainer}>
