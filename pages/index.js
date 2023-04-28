@@ -1,8 +1,10 @@
 import cn from 'classnames'
 import Image from 'next/image';
+import Head from 'next/Head'
 
 import birdGif from '../images/bird.gif';
 import pandaGif from '../images/panda.gif'
+import appleTouchIcon from '../images/apple-touch-icon.png'
 
 import styles from '../styles/Home.module.css';
 
@@ -19,6 +21,18 @@ export default function Home() {
           }
         `}
       </style>
+      <Head>
+        <title>
+          Meka Seymour | Tech & community
+        </title>
+        <meta
+          name="description"
+          content="Meka Seymour, Harlem-based software engineer working on community-centered tech"
+          key="desc"
+        />
+        <meta property="og:title" content="Meka Seymour, Harlem-based software engineer working on community-centered tech" />
+        <meta property="og:image" content={appleTouchIcon} />
+      </Head>
       <div className={styles.contentWrapper}>
         <div className={styles.main}>
           <h1 className={styles.title}>Hi, I'm Meka</h1>
